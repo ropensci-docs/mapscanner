@@ -1,0 +1,11 @@
+pandoc: '2.5'
+pkgdown: 1.6.1
+pkgdown_sha: ~
+articles:
+  mapscanner: mapscanner.html
+  mapstyles: mapstyles.html
+last_built: 2021-07-13T22:10Z
+urls:
+  reference: https://docs.ropensci.org/mapscanner/reference
+  article: https://docs.ropensci.org/mapscanner/articles
+

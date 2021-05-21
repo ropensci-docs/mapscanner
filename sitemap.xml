@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://docs.ropensci.org/mapscanner/index.html</loc>
+  </url>
+  <url>
+    <loc>https://docs.ropensci.org/mapscanner/reference/mapscanner-package.html</loc>
+  </url>
+  <url>
+    <loc>https://docs.ropensci.org/mapscanner/reference/ms_aggregate_polys.html</loc>
+  </url>
+  <url>
+    <loc>https://docs.ropensci.org/mapscanner/reference/ms_generate_map.html</loc>
+  </url>
+  <url>
+    <loc>https://docs.ropensci.org/mapscanner/reference/ms_rectify_map.html</loc>
+  </url>
+  <url>
+    <loc>https://docs.ropensci.org/mapscanner/reference/ms_rotate_map.html</loc>
+  </url>
+  <url>
+    <loc>https://docs.ropensci.org/mapscanner/reference/pipe.html</loc>
+  </url>
+  <url>
+    <loc>https://docs.ropensci.org/mapscanner/reference/set_mapbox_token.html</loc>
+  </url>
+  <url>
+    <loc>https://docs.ropensci.org/mapscanner/articles/mapscanner.html</loc>
+  </url>
+  <url>
+    <loc>https://docs.ropensci.org/mapscanner/articles/mapstyles.html</loc>
+  </url>
+</urlset>

@@ -1,0 +1,12 @@
+{
+  "commit": {
+    "commit": "2a4097e0d0c105bdf1c51ffecc1b1ec8ce58e4a0",
+    "author": "mpadge <mark.padgham@email.com>",
+    "time": "2021-05-21 12:03:01",
+    "files": 3,
+    "merge": false,
+    "message": ".Rbuildignore .hooks\n"
+  },
+  "remote": "https://github.com/ropensci/mapscanner",
+  "pkg": "mapscanner"
+}
