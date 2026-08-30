@@ -1,0 +1,13 @@
+{
+  "commit": {
+    "commit": "d213c982839f577e6882c30a7e5674310d451215",
+    "author": "mpadge <mark.padgham@email.com>",
+    "time": "2025-02-07T10:55:05Z",
+    "files": 3,
+    "merge": false,
+    "message": "attempt fix for #53\n"
+  },
+  "repo": "https://github.com/ropensci/mapscanner",
+  "pkg": "mapscanner",
+  "time": "2026-08-30T12:13:28Z"
+}
