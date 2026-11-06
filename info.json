@@ -1,0 +1,13 @@
+{
+  "commit": {
+    "commit": "186496da87a07138e026b500c9331a8e6d945b98",
+    "author": "mpadge <mark.padgham@email.com>",
+    "time": "2026-11-06T11:30:44Z",
+    "files": 4,
+    "merge": false,
+    "message": "mv README.Rmd -> README-src.Rmd for tangled render\n"
+  },
+  "repo": "https://github.com/ropensci/mapscanner",
+  "pkg": "mapscanner",
+  "time": "2026-11-06T15:23:08Z"
+}

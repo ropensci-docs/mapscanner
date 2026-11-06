@@ -1,0 +1,63 @@
+# mapscanner styles
+
+The `mapscanner` package is able to generate maps in the [three styles
+provided by mapbox](https://docs.mapbox.com/api/maps/#styles). [The
+`ms_generate_map()`
+function](https://docs.ropensci.org/mapscanner/reference/ms_generate_map.html)
+has a `bw` parameter with a default of `TRUE` to generate
+black-and-white maps, including conversion of coloured mapbox styles to
+black-and-white. The use of coloured maps, generated with `bw = FALSE`,
+is not generally recommended in `mapscanner`, and overdrawn markings are
+identified exclusively by colour, and any markings in a colour which is
+also present in the underlying maps will generally not be accurately
+identified.
+
+Because illustrations of these map styles requires files too large to be
+placed inside an R package, they are not included with this vignette.
+The styles can nevertheless be easily examined from [the main mapbox
+styles page](https://docs.mapbox.com/api/maps/styles/), or by clicking
+the hyperlinked text below, and are:
+
+1.  `style = "light"` - the generally recommended style for
+    `mapscanner`, [“designed to provide geographic context while
+    highlighting the data on your analytics dashboard, data
+    visualization, or data overlay](https://www.mapbox.com/maps/light).
+2.  `style = "streets"`, which is, [“a comprehensive, general-purpose
+    map that emphasizes accurate, legible styling of road and transit
+    networks](https://www.mapbox.com/maps/streets).
+3.  `style = "outdoors"`, which is, [“a general-purpose map with curated
+    tilesets and specialized styling tailored to hiking, biking, and the
+    most adventurous use cases”](https://www.mapbox.com/maps/outdoors).
+
+Alternatively, these different styles can be examined for any desired
+area with the following code.
+
+``` r
+
+bb <- osmdata::getbb ("<name of location>")
+shrink <- 0.3 # shrink that bounding box to 30% size
+bb <- t (apply (bb, 1, function (i) {
+    mean (i) + c (-shrink, shrink) * diff (i) / 2
+}))
+
+ms_generate_map (
+    bbox = bb,
+    max_tiles = 16L,
+    mapname = "map-light",
+    style = "light"
+)
+ms_generate_map (
+    bbox = bb,
+    max_tiles = 16L,
+    mapname = "omaha-streets",
+    style = "streets",
+    bw = FALSE
+)
+ms_generate_map (
+    bbox = bb,
+    max_tiles = 16L,
+    mapname = "omaha-outdoors",
+    style = "outdoors",
+    bw = FALSE
+)
+```
